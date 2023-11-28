@@ -5,12 +5,12 @@ const usercontroller = require('../controllers/siswa')
 
 router.get('/siswa', usercontroller.index)
 
-router.get('/siswa/:id', usercontroller.show)
+router.get('/showsiswa/:id', usercontroller.show)
 
-  router.post('/siswa', usercontroller.store)
+  router.post('/addsiswa', usercontroller.store)
 
-  router.put('/siswa/:id', usercontroller.update)
+  router.put('/updatesiswa/:id', usercontroller.update)
 
-  router.delete('/siswa/:id', usercontroller.delete)
+  router.delete('/deletesiswa/:id', usercontroller.delete)
 
   module.exports = router
